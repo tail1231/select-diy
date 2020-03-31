@@ -1,0 +1,172 @@
+/**index.wxss**/
+
+page {
+  background-color: #108ee9;
+}
+.top_view {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
+
+
+.select_title_class {
+  width: 200px;
+  border-radius: 20px;
+  line-height: 30px;
+  background: rgba(250, 250, 250, 0.3);
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+
+.select_arrow_class {
+  width: 10px;
+  height: 10px;
+  padding-left: 5px;
+}
+
+.select_title_view_class {
+  justify-content: center;
+}
+
+
+.select_com-sList {
+  background: white;
+  position: absolute;
+  border: 0.3px solid #e2e2e2;
+  border-top: none;
+  box-sizing: border-box;
+  z-index: 3;
+  width: 100%;
+  border-radius: 4px;
+  max-height: 200px;
+  
+  margin-top: 10px;
+  overflow: auto;
+  justify-content: center;
+}
+
+.select_title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.select_com-sItem {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 6px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background: #e1f2fe;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.selected {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 6px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background: #108ee9;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+}
+
+.add_community_view_class {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 6px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #e1f2fe;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagesize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_community_class {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+/**
+dialog
+*/
+
+.zan-dialog__mask {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+  display: none;
+}
+
+/* //设置阴影半透明背景如： background: rgba(0, 0, 0, 0.4); */
+
+.zan-dialog__container {
+  position: fixed;
+  top: 55px;
+  width: 550rpx;
+  margin-left: 100rpx;
+  background: #f8f8f8;
+  transform: translateY(300%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+}
+
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+  position: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+
+}

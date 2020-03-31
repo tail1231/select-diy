@@ -1,0 +1,26 @@
+<view>
+  <view class='top_view'>
+    <view class='select_title_class' bindtap='selectToggle'>
+      {{nowText}}
+      <image src="/images/main_header_triangle.png" class='select_arrow_class' animation="{{animationData}}"></image>
+    </view>
+  </view>
+</view>
+
+<view class="zan-dialog {{selectShow ? 'zan-dialog--show' : '' }}" wx:if="{{selectShow}}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view class='select_title_view_class'>
+      <view class='select_com-sList' wx:if="{{selectShow}}">
+        <view class='select_title'>选择当前所在社区</view>
+        <view wx:for="{{selectArray}}" data-index="{{index}}" wx:key='' class="select_com-sItem {{currentCmutyItem === index?'selected':' '}}" bindtap='setText'>{{item.name}}</view>
+        <view class='add_community_view_class'>
+          <view class='imagesize'>
+            <image src="/images/icon_add_community.png" class='add_community_class' />
+            <text bindtap="addCommunity">授权新房屋</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
